@@ -1,0 +1,63 @@
+body {
+  display: grid;
+  height: 97vh;
+  background-color: rgb(38, 38, 38);
+}
+
+.container {
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.game_table {
+  cursor: pointer;
+  text-align: center;
+  border: 3px solid white;
+  padding: 2em;
+  background-color: blueviolet;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+.game_table:hover {
+  background-color: rgb(247, 188, 62);
+}
+
+.numbers {
+  visibility: hidden;
+}
+
+.visible {
+  display: inline;
+}
+
+.match {
+  background-color: greenyellow;
+}
+
+.doNotmatch {
+  display: none;
+}
+
+.reset_btn {
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 0 auto;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.reset_btn:hover {
+  background-color: rgb(4, 52, 142);
+}
